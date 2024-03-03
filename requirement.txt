@@ -1,0 +1,55 @@
+
+The Habit Tracking App
+
+The Habit Tracking App is designed as a cornerstone for personal development, fostering awareness and enhancement of daily habits which are instrumental in achieving long-term aspirations. 
+The aim of this project is to create a Habit Tracker that acts as a reliable guide to navigate the complexities of establishing and maintaining habits. 
+The Habit Tracking App will come with a full suite of documentation and docstrings that explain each code segment The Habit Tracker promises a user-friendly onboarding experience.
+The application's primary components are the Tracker, Task, and Habit classes, which are developed based on the principles of Object-Oriented Programming (OOP) and Functional Programming (FP) in Python 3.7 or a newer version. 
+A single habit has the potential to involve multiple tasks that requires to be completed (checked) and its continuous iteration. 
+By limiting the number of general habits included in the list and including similar tasks in one Habit, the Habits will appear more manageable to do, keeping in mind the core objectives. 
+The Habit Tracking App will be made accessible through Github.
+
+## System Overview
+At the heart of the Habit Tracking App's backend are three main Python classes: `Habit`, `Task`. 
+These classes should provide a modular and scalable framework for the system.
+
+## Habit Class
+The `Habit` class is the core unit of The Habit Tracking App. The attributes defining each habit are:
+- Name: The label for the habit.
+- Start Date: creation date and start for anaylsis purposes.
+- Tasks: A compilation of tasks that are grouped in their contextual habit. Each with a designated name and completion status.
+
+## Task Class 
+The `Task` class a separate class but working very close to the habits class,
+ as a user creates the tasks into habits once created already. A Habit can have one or more Task to be completed.
+This will keep the list of general habits a bit shorter and will look easier to complete, therefore the user. 
+Its functions include:
+- The creation date for analysis purposes.
+- Periodicity: daily, weekly, monthly, yearly, when the task should be performed.
+- Displaying the reference habit.
+
+## Task History
+The Task History class includes:
+- Updating tasks upon completion.
+- Maintaining a record of tasks in the user's personal list.
+
+## User Flow and Interaction
+User engagement with the app starts with the establishment of a new habit and its respective tasks. 
+Users can then track their progress by marking tasks as complete, mapping their dedication to the specific habit. 
+The tracker also provides insights into ongoing habits and any streaks that indicate consistent practice.
+Data Persistence
+Data continuity between sessions is guaranteed through storage into a relational database, established with SQLite3. 
+The database structure is simple for easy query execution.
+Analytics and Functionality
+The Habit Tracking App will include an analytics module. The main analysis will show the best performed tasks or group of tasks with same objective (habits). 
+It will show the balance between completed and uncompleted habits or tasks. 
+More analytics will be added for the user.
+
+## Command Line Interface (CLI)
+A Command Line Interface (CLI) will be created for ease of use. 
+It will enable users to visualize, create, check, and analyze habits and tasks through clear and direct commands, ensuring a transparent and seamless user experience.
+
+## Documentation and Testing
+A comprehensive suite of tests will be provided to confirm the validity of the app. 
+Python docstrings will be used throughout the codebase for clarity, complemented by a `README.md` file that guides users through setup and usage.
+The following diagrams, a UML Class Diagram and a UML Activity Diagram, represent a visual overview of the Habit Tracker's structure and flow.
