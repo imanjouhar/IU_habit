@@ -24,4 +24,4 @@ The application's primary components are the Task, and Habit classes, which are 
 
 1. **From the Repository**:
    ```bash
-   please follow the github link to clone it https://github.com/imanjouhar/habit-tracking-app.git
+   please follow the github link to clone it [https://github.com/imanjouhar/IU_habit]
